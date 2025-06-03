@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris – Destination</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/destination-folder/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <section
+      class="hero text-white d-flex flex-column justify-content-start align-items-center"
+      id="hero"
+      style="
+        background: url('/destination-folder/assets/Images/Paris-destinations.jpg')
+          no-repeat center center/cover;
+        min-height: 100vh;
+      "
+    >
+      <!-- NAVBAR -->
+      <header class="w-100 position-absolute top-0 z-3">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <div class="container-fluid px-0">
+              <!-- Left: Search Icon and Label -->
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/icons/search-white.svg"
+                  alt="Search"
+                  width="16"
+                  class="me-2"
+                />
+                <span class="small text-white">Search</span>
+              </div>
+
+              <!-- Center: Globe Icon (Only on lg+) -->
+              <div
+                class="position-absolute start-50 translate-middle-x d-none d-lg-block"
+              >
+                <img
+                  src="assets/icons/globe-white.svg"
+                  alt="Globe"
+                  width="24"
+                />
+              </div>
+
+              <!-- Toggler -->
+              <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navbar Links -->
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="mainNav"
+              >
+                <ul class="navbar-nav align-items-lg-center gap-2 gap-lg-0">
+                  <li class="nav-item">
+                    <a
+                      href="../destination-folder/destinations.html"
+                      class="nav-link text-white small"
+                      >Destinations</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="/contacts-folder/contact.html"
+                      class="nav-link text-white small"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      class="btn btn-light btn-sm rounded-pill px-3 py-1 border-2"
+                    >
+                      Sign in
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <hr class="border-white opacity-50 m-0" />
+        </div>
+      </header>
+      <!-- Hero Text -->
+      <div
+        class="container h-100 d-flex flex-column justify-content-end pb-5 w-100 position-absolute top-0 z-3"
+      >
+        <div class="row">
+          <div
+            class="col-md-6 text-white d-flex flex-column align-items-start gap-4"
+          >
+            <div>
+              <p class="text-uppercase small mb-1">DESTINATIONS</p>
+              <h1 class="display-4 mb-0">Paris</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATION DETAILS -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Back to Destinations Link -->
+        <div class="mb-4">
+          <a
+            href="destinations.html"
+            class="text-dark text-decoration-underline"
+          >
+            ← Back to Destinations
+          </a>
+        </div>
+        <h2 class="mb-4">Explore the City of Light</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <p>
+              Paris is the beating heart of France — a city where romance meets
+              grandeur. Walk through cobbled alleys and monumental boulevards,
+              feel the timeless charm of café culture, and bask in the artistic
+              legacy housed in galleries and architecture alike.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Whether you're standing under the Eiffel Tower or strolling
+              through Montmartre, every corner holds a story. Dine on
+              world-class cuisine, admire haute couture, or simply enjoy the
+              rhythm of a city that knows how to live.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              This isn't just a trip — it's an invitation to be transformed by
+              culture, cuisine, and charm. Paris awaits your footsteps. Let's
+              make it happen.
+            </p>
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div class="mt-5">
+          <h2 class="h4 mb-4">Book Your Trip</h2>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" required />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="col-md-6">
+              <label for="checkin" class="form-label">Check-In</label>
+              <input type="date" class="form-control" id="checkin" required />
+            </div>
+            <div class="col-md-6">
+              <label for="checkout" class="form-label">Check-Out</label>
+              <input type="date" class="form-control" id="checkout" required />
+            </div>
+            <div class="col-12">
+              <label for="notes" class="form-label">Additional Notes</label>
+              <textarea class="form-control" id="notes" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning px-4">
+                Submit Booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-warning text-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="/landing-folder/index.html"
+                  class="text-dark text-decoration-underline"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/destination-folder/destinations.html"
+                  class="text-dark text-decoration-underline"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-underline"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contacts-folder/contact.html"
+                  class="text-dark text-decoration-underline"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Newsletter</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              euismod, nisl nec tincidunt dapibus.
+            </p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Email"
+                required
+              />
+              <button class="btn btn-success">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
