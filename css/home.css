@@ -1,0 +1,203 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.hero {
+  position: relative;
+  background: url('/images/header.jpg') no-repeat center center / cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: left;
+  overflow: hidden;
+  padding-bottom: 48px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+}
+
+.hero-text {
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.hero .lead {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.booking-form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 140px;
+}
+
+.booking-form label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.booking-form input,
+.booking-form select {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  height: 48px;
+  width: 100%;
+}
+
+.booking-form button {
+  height: 48px;
+  padding: 0 16px;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destinations img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.destination-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.destination-overlay .card-title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.destination-overlay .card-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.card-title,
+.card-text {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #ffc107;
+  padding: 32px 0;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #000;
+}
+
+footer input[type="email"] {
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+footer .btn-success {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-group-text {
+  border: none;
+  background-color: transparent;
+}
